@@ -107,7 +107,7 @@ const update = (score, index) => {
     }
     if (+index === 9) {
         const displayScore = overlayMarkup();
-        document.querySelector('.quiz').insertAdjacentHTML('beforeend', displayScore);
+        document.querySelector('.quiz').insertAdjacentHTML('afterend', displayScore);
         document.querySelector('.body').classList.add('overlay__body');
         const restartBtn = document.querySelector('.restart');
         restartBtn.addEventListener('click', () => {
